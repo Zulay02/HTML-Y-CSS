@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Video</title>
 </head>
 <body>
     <main>
         <section>
-            <video  controls preload="auto">
-                <source src="link#t=10,60"/>
-                <source src="link#t=10,60"/>
-                <source src="link#t=10,60"/>//diferentes etiquetas de formato de video
+            <!-- Guarda el video en esta carpeta con estos nombres.
+                 Se ponen varios formatos para que funcione en todos los navegadores.
+                 #t=10,60 hace que el video vaya del segundo 10 al 60. -->
+            <video controls preload="auto">
+                <source src="video.mp4#t=10,60" type="video/mp4"/>
+                <source src="video.webm#t=10,60" type="video/webm"/>
+                Tu navegador no puede reproducir este video.
             </video>
         </section>
     </main>
